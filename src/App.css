@@ -1,32 +1,44 @@
 @import url(https://db.onlinewebfonts.com/c/0c724f6aa457310440cf8949c615cbd7?family=Star+Jedi+V2);
-
-
+html{
+ height: 100vh;
+ overflow: visible;
+}
 body{
   font-size: 15px;
   font-weight:lighter;
   font-family: "Star Jedi V2";
-  background-image: url(./componentes/wallpaperflare.com_wallpaper.jpg);
+  background-image: url('./componentes/pictures/wallpaperflare.com_wallpaper.jpg');
   background-size: cover;
-  overflow: hidden;
+}
+::-webkit-scrollbar{
+  width: 5px;
+  height: 8px;
+  background-color: #aaa;
+}
+::-webkit-scrollbar-thumb{
+  background: #000;
 }
 .navContainer{
-  background-color: #0c2c4388;
+  margin-top: -30px;
+  padding-top: 20px;
+  font-size: 120px;
+  background-color: #0c2c4346;
   backdrop-filter: blur(10px);
-  height: 50px;
+  height: 60px;
   display: grid;
   grid-template-areas: 
-      'espacio icon nav icon2 ' ;
+      'espacio icon nav nav' ;
   
 }
 .fuerza_container{
-  grid-area: 'icon2';
   width: 100%;
+  height: 1rem;
 }
 .fuerza{
-  background-image: url('./componentes/la\ fuerza.png');
+  background-image: url('./componentes/pictures/la\ fuerza.png');
   margin-top: 200px;
   width: 25vw;
-  height: 100vh;
+  height: 15rem;
   background-size: contain;
   background-repeat: no-repeat;
   justify-content: center;
@@ -34,7 +46,7 @@ body{
   
 }
 .icon{
-  background-image: url('./componentes/StarWarsicon.png');
+  background-image: url('./componentes/pictures/StarWarsicon.png');
   width: 100px;
   height: 100px;
   background-size: contain;
@@ -47,6 +59,7 @@ body{
   justify-content: center;
 }
 button{
+  font-size: 20px;
   margin: 70px;
   margin-top: 20px;
   color: #FFE81F;
@@ -65,4 +78,78 @@ button:hover{
   width: 700px;
   display: flex;
   margin: 0 auto;
+}
+.footer{
+  color: aliceblue; 
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 30px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  justify-content: space-around;
+}
+.footer div p{
+color: #730d73;
+}
+.footer ul{
+  border-left: 1px solid gray;
+  height: 70px;
+}
+.footer ul li{
+  list-style: none;
+  color: rgb(250, 242, 242);
+  padding: 5px;
+}
+a{
+  text-decoration: none;
+  color: #ffff00;
+  display: flex;
+}
+.my_email a{
+  display: flex;
+  color:rgb(250, 242, 242);
+}
+.email_icon{
+  position: relative;
+  background-image: url('./componentes/pictures/correo-electronico-vacio.png');
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  filter: invert(100%);
+  margin-left: 20px;
+}
+.my_github{
+  display: flex;
+}
+.github_icon{
+  position: relative;
+  background-image: url('./componentes/pictures/github.png');
+  filter: invert(100%);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  margin-left: 20px;
+}
+.ar{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  height: 20px;
+}
+.swapi{
+  display: flex;
+}
+.swapi_icon{
+  position: relative;
+  background-image: url('./componentes/pictures/icon\ swapi.png');
+  filter: invert(100%);
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  margin-right: 20px;
+}
+.swapi ul {
+  border: none;
 }

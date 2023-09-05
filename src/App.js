@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Nav from "./componentes/Nav";
 import Pagina from "./componentes/Pagina";
 import StateCompo from "./componentes/StateCompo";
+import Foot from "./componentes/Foot";
 
 
 
@@ -18,6 +19,7 @@ const App = () => {
       </div>
       <Nav/>
       <Pagina/>
+      <Foot/>
     </StateCompo>
   );
 };

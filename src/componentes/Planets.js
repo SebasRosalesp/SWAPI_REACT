@@ -14,7 +14,13 @@ const Planet = ({planetId})=>{
     },[planetId]);
 
     if(!planet){
-        return <div>Cargando...</div>
+        return(
+            <div className='card-group'>
+            <div className="picContainer"></div>
+            <div className="estrellas"></div>
+            <div className="loader"></div>
+        </div>
+        );
     }
     
     let src = '';

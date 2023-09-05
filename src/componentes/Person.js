@@ -15,7 +15,13 @@ const Person = ({personId}) => {
     },[personId]);
 
     if(!person){
-        return<div>Cargando...</div>
+        return(
+        <div className='card-group'>
+            <div className="picContainer"></div>
+            <div className="estrellas"></div>
+            <div className="loader"></div>
+        </div>
+        );
     }
 
     let src = '';

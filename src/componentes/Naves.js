@@ -15,7 +15,12 @@ const Nave = ({naveId})=>{
     },[naveId]);
 
     if(!nave){
-        return <div>Cargando...</div>
+        return( 
+        <div className='card-group'>
+            <div className="picContainer"></div>
+            <div className="estrellas"></div>
+            <div className="loader"></div>
+    </div>);
     }
     
     let src = '';
