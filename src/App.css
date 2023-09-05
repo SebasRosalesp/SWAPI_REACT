@@ -1,0 +1,68 @@
+@import url(https://db.onlinewebfonts.com/c/0c724f6aa457310440cf8949c615cbd7?family=Star+Jedi+V2);
+
+
+body{
+  font-size: 15px;
+  font-weight:lighter;
+  font-family: "Star Jedi V2";
+  background-image: url(./componentes/wallpaperflare.com_wallpaper.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+.navContainer{
+  background-color: #0c2c4388;
+  backdrop-filter: blur(10px);
+  height: 50px;
+  display: grid;
+  grid-template-areas: 
+      'espacio icon nav icon2 ' ;
+  
+}
+.fuerza_container{
+  grid-area: 'icon2';
+  width: 100%;
+}
+.fuerza{
+  background-image: url('./componentes/la\ fuerza.png');
+  margin-top: 200px;
+  width: 25vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  justify-content: center;
+  position: absolute;
+  
+}
+.icon{
+  background-image: url('./componentes/StarWarsicon.png');
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: 'icon';
+}
+.nav{
+  display: flex;
+  grid-area: 'nav';
+  justify-content: center;
+}
+button{
+  margin: 70px;
+  margin-top: 20px;
+  color: #FFE81F;
+  background-color:rgba(240, 248, 255, 0);
+  border: none;
+  height: fit-content;
+  font-family: "Star Jedi V2";
+  
+}
+button:hover{
+  cursor: pointer;
+  color:darkgrey;
+  
+}
+.slider{
+  width: 700px;
+  display: flex;
+  margin: 0 auto;
+}

@@ -1,0 +1,169 @@
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+.slider{
+    width: 700px;
+}
+.dots{
+    justify-content: center;
+}
+.card-group{
+    border: none;
+    padding: 20px;
+    margin: 30px;
+    width: 600px;
+    height: 420px;
+    display: flexbox;
+    transform: translate(0, -20px);
+    background:#000 url(http://1.bp.blogspot.com/-q7NYia_DjQI/U4t7_J4gwwI/AAAAAAAAMKo/nru4YxfjK6I/s1600/estrellas.png);
+    border-radius: 10px;
+}
+.picContainer{
+    width: 100%;
+    display: grid;
+    z-index: 3;
+    height: 200px;
+}
+.text{
+    height: 220px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-areas:
+        'info1 info2'
+    ;
+    color: white;
+    background-color: #293e48a7;
+}
+.estrellas {
+    margin-top: 10px;
+    height: 210px;
+    grid-area: 'info1 info2';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:auto;
+    display:block;
+    background:transparent url(http://3.bp.blogspot.com/-FwB8aSiMBmI/U4t9MkimRrI/AAAAAAAAMK0/FAlqX8ZFyu8/s1600/twinkling.png) repeat top center;
+    z-index:1;
+    -moz-animation:move-twink-back 100s linear infinite;
+    -ms-animation:move-twink-back 100s linear infinite;
+    -o-animation:move-twink-back 100s linear infinite;
+    -webkit-animation:move-twink-back 100s linear infinite;
+    animation:move-twink-back 100s linear infinite;
+    }
+.info{
+    padding-left: 10px;
+    grid-area: 'info1';
+    height: 13rem;
+    width: 250px;
+    z-index: 3;
+}
+.info2{
+    grid-area: 'info2';
+    height: 13rem;
+    width: 250px;
+    z-index: 3;
+}
+
+#img{
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    z-index: 3;
+}
+.img1{
+    background-image: url('./pictures/Luke.img.png');
+}
+.img2{
+    background-image: url('./pictures/c3po.png');
+}
+.img3{
+    
+    background-image: url('./pictures/R2d2.png');
+}
+.img4{
+    background-image: url('./pictures/Darth\ vader.png');
+}
+.img5{
+    background-image: url('./pictures/Leia.png');
+}
+.img6{
+    background-image: url('./pictures/owen\ lars.jpg');
+}
+.img7{
+    background-image: url('./pictures/Beru\ Lars.jpg');
+}
+.img8{
+    background-image: url('./pictures/R5D4.png');
+}
+.img9{
+    background-image: url('./pictures/Biggs.jpg');
+}
+.img10{
+    background-image: url('./pictures/obi\ wan\ kenobi.png');
+}
+.imgplanet1{
+    background-image: url('./pictures/Tatooine.png');
+}
+.imgplanet2{
+    background-image: url('./pictures/Alderaan.png');
+}
+.imgplanet3{
+    background-image: url('./pictures/Yaavin\ hr.png');
+}
+.imgplanet4{
+    background-image: url('./pictures/Hoth.png');
+}
+.imgplanet5{
+    background-image: url('./pictures/dagobah.png');
+}
+.imgplanet6{
+    background-image: url('./pictures/Bespin.png');
+}
+.imgplanet7{
+    background-image: url('./pictures/Endor.png');
+}
+.imgplanet8{
+    background-image: url('./pictures/Naboo.png');
+}
+.imgplanet9{
+    background-image: url('./pictures/coruscant.png');
+}
+.imgplanet10{
+    background-image: url('./pictures/Kamino.png');
+}
+.imgnave1{
+    background-image: url('./pictures/Cr90\ corvette.png');
+}
+.imgnave2{
+    background-image: url('./pictures/Star\ destroyer.png');
+}
+.imgnave3{
+    background-image: url('./pictures/Sentinel.jpg');
+}
+.imgnave4{
+    background-image: url('./pictures/death\ star.png');
+}
+.imgnave5{
+    background-image: url('./pictures/millenium\ Falcon.png');
+}
+.imgnave6{
+    background-image: url('./pictures/y\ wing.png');
+}
